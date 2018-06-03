@@ -1,0 +1,155 @@
+.header {
+}
+.checkbox {
+  display: none;
+}
+.header-button {
+  height: 60px;
+  width: 60px;
+  background: none;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 150;
+  position: fixed;
+  top: 60px;
+  right: 60px;
+}
+.header-button span {
+  height: 1px;
+  width: 20px;
+  background: white;
+  border: 0;
+  margin-bottom: 5px;
+}
+.header-button .three {
+  margin-bottom: 0 !important;
+}
+.header-button:hover {
+  border: 1px solid var(--lightblue);
+}
+.header-button:hover .line {
+  width: 24px;
+  margin-bottom: 7px;
+}
+.header-button2 {
+  height: 60px;
+  width: 60px;
+  background: none;
+  border: 1px solid white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 150;
+  position: fixed;
+  top: 60px;
+  right: 60px;
+}
+.header-button2 .one {
+  height: 1px;
+  width: 28px;
+  background: white;
+  border: 0;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.header-button2 .two {
+  height: 1px;
+  width: 28px;
+  background: white;
+  border: 0;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.header-button2:hover {
+  border: 1px solid var(--lightblue);
+}
+.header-button2:hover .line {
+  width: 34px;
+}
+.header-button:hover, .header-button2 {
+	cursor: pointer;
+}
+.material-icons {
+	font-size: 30px;
+	text-decoration: none;
+}
+.link {
+}
+ul {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-top: -200vh;
+  background: rgba(20, 15, 48, .95);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 1.2s;
+  z-index: 100;
+}
+.redbg {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-top: -100vh;
+  background: var(--red);
+  position: fixed;
+  transition-duration: 1.2s;
+  z-index: 99;
+}
+ul a {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  opacity: 0.4;
+  padding: 15px 0;
+  border-top: 1px solid rgba(0,0,0,0);
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+ul a:first-child {
+  color: white;
+  opacity: 1;
+}
+ul a b {
+  font-weight: 400;
+  color: var(--lightblue);
+  padding-right: 20px;
+}
+ul a:hover {
+  opacity: 1;
+  border-top: 1px solid var(--red);
+  border-bottom: 1px solid var(--red);
+  padding: 15px 30px;
+}
+.checkbox:checked ~ ul {
+  margin-top: 0px;
+}
+.checkbox:checked ~ .redbg {
+  margin-top: 100vh;
+}
+.checkbox:checked ~ ul a {
+}
+.checkbox:checked ~ .header-button2 {
+  display: flex;
+}
+.checkbox:checked ~ .header-button {
+  display: none;
+}
+.checkbox:checked ~ .page-wrap {
+}
+.header img {
+  top: 65px;
+  left: 3vw;
+  width: 8vw;
+  position: fixed;
+}
