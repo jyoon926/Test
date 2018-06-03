@@ -14,10 +14,17 @@
 }
 html {
   background-color: var(--red);
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 body {
   background-color: var(--blue);
-  overflow: scroll;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 h1, h2, h3, p, a {
   font-weight: 400;
@@ -139,13 +146,14 @@ a {
 
 .section1 {
   width: var(--inside);
-  margin: 0 calc(-1 * var(--outsidecol));
+  background: var(--red);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background: var(--red);
   padding: 100px var(--outsidecol);
+  margin: 0 0 0 -14vw;
+
 }
 .section1 .landerTitle {
   color: white;
@@ -195,7 +203,7 @@ a {
 }
 .section2 .huge {
   width: calc(var(--inside) / 2);
-  color: var(--red);
+  color: var(--lightblue);
   font-size: 400px;
   line-height: 1;
   font-weight: 700;
@@ -221,7 +229,7 @@ a {
   justify-content: center;
   align-items: center;
   color: white;
-  border: 1px solid var(--red);
+  border: 1px solid var(--lightblue);
   width: 200px;
   height: 70px;
   text-align: center;
@@ -230,7 +238,7 @@ a {
 }
 .section2 .sectionp a:hover {
   border-radius: 0;
-  background: var(--red);
+  background: var(--lightblue);
 }
 
 .section3 {
@@ -249,7 +257,7 @@ a {
 .section3 .img img {
   height: 320px;
   width: 320px;
-  background: var(--red);
+  background: var(--lightblue);
   box-shadow: -20px 20px 0 #1A133D;
 }
 .section3 .sectionp {
@@ -271,7 +279,7 @@ a {
   justify-content: center;
   align-items: center;
   color: white;
-  border: 1px solid var(--red);
+  border: 1px solid var(--lightblue);
   width: 200px;
   height: 70px;
   text-align: center;
@@ -280,7 +288,7 @@ a {
 }
 .section3 .sectionp a:hover {
   border-radius: 0;
-  background: var(--red);
+  background: var(--lightblue);
 }
 
 .section4 {
@@ -299,7 +307,7 @@ a {
 .section4 .img img {
   height: 320px;
   width: 320px;
-  background: var(--red);
+  background: var(--lightblue);
   box-shadow: -20px 20px 0 #1A133D;
 }
 .section4 .sectionp {
@@ -321,7 +329,7 @@ a {
   justify-content: center;
   align-items: center;
   color: white;
-  border: 1px solid var(--red);
+  border: 1px solid var(--lightblue);
   width: 200px;
   height: 70px;
   text-align: center;
@@ -330,16 +338,18 @@ a {
 }
 .section4 .sectionp a:hover {
   border-radius: 0;
-  background: var(--red);
+  background: var(--lightblue);
 }
 
 footer {
   height: 300px;
-  width: 100vw;
+  width: 100%;
   background: var(--red);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 footer img {
   height: 50px;

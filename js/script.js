@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+  /*//Overlay scrollbar
+  $(function() {
+    //The first argument are the elements to which the plugin shall be initialized
+    //The second argument has to be at least a empty object or a object with your desired options
+    OverlayScrollbars(document.querySelectorAll('body'), {
+      className : "os-theme-light os-theme-dark-edgy",
+
+    });
+  });*/
+
   //Change .scrollbutton position on scroll
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 200) {
@@ -13,9 +23,9 @@ $(document).ready(function(){
   //Disable scrolling in menu
   $('#checkbox').change(function() {
     if ($('#checkbox').is(":checked")) {
-      $('body').css('overflow','hidden');
+      $('body').css('overflow-y','hidden');
     } else {
-      $('body').css('overflow','scroll');
+      $('body').css('overflow-y','scroll');
     }
   });
 
@@ -31,4 +41,5 @@ $(document).ready(function(){
 			});
 		}
 	});
+
 });
