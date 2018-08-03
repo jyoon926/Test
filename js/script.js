@@ -12,7 +12,7 @@ $(document).ready(function(){
 
   //Change .scrollbutton position on scroll
   $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 100) {
        $(".scrollbutton").css("bottom", "-40px");
     }
     else {
